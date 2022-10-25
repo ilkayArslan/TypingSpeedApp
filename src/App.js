@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import WordsArea from "./components/WordsArea"
+import InputArea from "./components/InputArea"
+import ScoreArea from "./components/ScoreArea"
+import LangSelect from './components/LangSelect';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' container  ana d-flex justify-content-center align-items-center' >
+      <div className=' w-100 h-50 bebe'>
+        <LangSelect />
+        <WordsArea />
+        <InputArea />
+        <ScoreArea />
+      </div>
     </div>
   );
 }
